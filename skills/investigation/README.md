@@ -1,5 +1,7 @@
-# 公司调查
+# 公司调查 · Company Investigations
 
 围绕具体公司核验主体、股权、人物、关联企业与产品运营。
 
-[查看技能总目录](../../README.md#技能目录)
+Verify companies, ownership, key people, related entities, and product operations.
+
+[中文技能目录](../../README.md#skills) · [English catalog](../../README.en.md#skills)

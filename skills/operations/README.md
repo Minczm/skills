@@ -1,5 +1,7 @@
-# 公司与产品运营
+# 公司与产品运营 · Business & Product Operations
 
 竞品分析、活动策划、用户增长与业务运营流程。
 
-[查看技能总目录](../../README.md#技能目录)
+Analyze competitors, plan campaigns, support user growth, and improve business workflows.
+
+[中文技能目录](../../README.md#skills) · [English catalog](../../README.en.md#skills)

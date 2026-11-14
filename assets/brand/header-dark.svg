@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title description">
+  <title id="title">方寒 · Skills</title>
+  <desc id="description">方寒的技能集。深蓝灰底，米白标题与暖砖红标记，右侧为三张抽象纸页。</desc>
+  <rect width="1280" height="320" fill="#1E2428"/>
+  <rect x="0.5" y="0.5" width="1279" height="319" fill="none" stroke="#3C464D"/>
+  <path d="M56 53H84" stroke="#DB9678" stroke-width="5"/>
+  <text x="104" y="61" fill="#BAC5CC" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="4">FANG HAN</text>
+  <path d="M266 44V63" stroke="#5E6B73"/>
+  <text x="286" y="61" fill="#BAC5CC" font-family="'Noto Sans CJK SC', 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="20" letter-spacing="3">方寒</text>
+  <text x="52" y="211" fill="#F2ECE1" font-family="Georgia, 'Times New Roman', serif" font-size="124" letter-spacing="-5">Skills</text>
+  <text x="384" y="205" fill="#BAC5CC" font-family="'Noto Sans CJK SC', 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="36" font-weight="400" letter-spacing="5">技能集</text>
+  <path d="M56 261H690" stroke="#46525A"/>
+  <path d="M56 261H110" stroke="#DB9678" stroke-width="3"/>
+  <path d="M786 47V273" stroke="#46525A"/>
+  <rect x="921" y="54" width="218" height="220" fill="#697C89" transform="rotate(12 1030 164)"/>
+  <rect x="866" y="62" width="226" height="214" fill="#3C494E" stroke="#78888D" stroke-width="1.5" transform="rotate(-12 979 169)"/>
+  <g transform="rotate(-2 1029 159)">
+    <path d="M920 45H1090L1138 93V274H920Z" fill="#273238" stroke="#CBD2CF" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M1090 45V93H1138" fill="#445158" stroke="#CBD2CF" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M943 45H969V132L956 122L943 132Z" fill="#DB9678"/>
+  </g>
+</svg>

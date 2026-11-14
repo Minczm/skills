@@ -1,5 +1,7 @@
-# 设计与视觉
+# 设计与视觉 · Design & Visuals
 
 封面配图、信息图、视觉策划与交互展示。
 
-[查看技能总目录](../../README.md#技能目录)
+Create covers, illustrations, infographics, and interactive presentations.
+
+[中文技能目录](../../README.md#skills) · [English catalog](../../README.en.md#skills)

@@ -1,5 +1,7 @@
-# 写作与发布
+# 写作与发布 · Writing & Publishing
 
 写作编辑、注释与版式处理、公众号及其他平台发布。
 
-[查看技能总目录](../../README.md#技能目录)
+Write and edit content, format notes and layouts, and publish across platforms.
+
+[中文技能目录](../../README.md#skills) · [English catalog](../../README.en.md#skills)

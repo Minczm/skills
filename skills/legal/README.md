@@ -1,5 +1,7 @@
-# 法律与合规
+# 法律与合规 · Legal & Compliance
 
 法规与判例检索、合规分析、法律写作。
 
-[查看技能总目录](../../README.md#技能目录)
+Find laws and case law, assess compliance, and draft legal documents.
+
+[中文技能目录](../../README.md#skills) · [English catalog](../../README.en.md#skills)

@@ -111,7 +111,7 @@ def import_skill(args):
         bundle, single_file = read_source(args.source, Path(temporary))
         target = install(bundle, single_file, args.category, args.slug, args.replace)
     print(f"Imported: {target.relative_to(ROOT)}")
-    print("Update the corresponding row in README.md.")
+    print("Update the corresponding row in README.md and README.en.md.")
 
 
 def export_skill(args):

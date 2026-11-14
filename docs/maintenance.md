@@ -1,13 +1,15 @@
 # 添加、更新与传输
 
+[English](maintenance.en.md) · [返回首页](../README.md#maintain)
+
 ## 交给 AI
 
 附上技能文件夹、ZIP、`SKILL.md` 或本次整理的内容，再发送：
 
 ```text
 维护 https://github.com/ZRainbow1275/skills 。
-先读 AGENTS.md，将这次提供的 Skill 归入合适分类，整理文件并更新 README 目录。
-预览图先留空。完成后提交到仓库，返回技能路径和提交链接。
+先读 AGENTS.md，将这次提供的 Skill 归入合适分类，整理文件并同步更新 README.md 和 README.en.md 的技能目录。
+有真实成品图时再更新两版首页的预览。完成后提交到仓库，返回技能路径和提交链接。
 ```
 
 更新已有技能时，附上对应技能的链接和需要调整的内容。
@@ -40,7 +42,7 @@ python3 scripts/transfer.py import inbox/company-background-investigation.zip --
 
 来源也可以是一个技能文件夹，或单个 `SKILL.md`。ZIP 内可以直接放 `SKILL.md`，也可以用一个技能文件夹包裹完整内容。
 
-导入完成后，AI 按[目录行模板](../templates/catalog-row.md)更新根 README，核对文件后提交。
+导入完成后，AI 按[目录与预览模板](../templates/catalog-row.md)同步更新两版首页，核对文件后提交。
 
 ### 更新
 
@@ -61,7 +63,9 @@ python3 scripts/transfer.py export skills/investigation/company-background-inves
 
 ## 首页与预览
 
-- 根 README 的每一行对应一项技能；首项技能替换所在分类的“待收录”行。
-- 技能名链接到 `skills/<category>/<slug>/SKILL.md`，问题说明用一句话，产出列只写主要结果。
-- 预览栏留空；有成品图后使用 `assets/previews/<slug>.webp` 或 `.png`，点击图片进入技能。
+- 根目录的 `README.md` 和 `README.en.md` 共同构成唯一的双语技能索引；两版的分类、技能顺序和链接保持一致。
+- 技能目录位于 `#skills`。暂无技能时保留一句待收录说明；收录后，每项一行，依次填写分类、Skill、解决的问题、产出。
+- 技能名链接到 `skills/<category>/<slug>/SKILL.md`，问题说明用一句话，产出只写主要结果。
+- 预览独立放在 `#previews`，最多展示三项真实成品。暂无图片时保留预留说明；有图后保存为 `assets/previews/<slug>.webp` 或 `.png`，两版共用图片，按页面语言填写 alt，点击进入对应技能。
+- 预览建议使用 16:9 横图，也可保留原始成果的比例。
 - 技能模板位于 [SKILL.md.template](../templates/SKILL.md.template)。
