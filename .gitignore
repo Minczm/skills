@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+/.cache/
+/dist/
+/inbox/*
+!/inbox/README.md
