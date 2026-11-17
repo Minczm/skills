@@ -75,13 +75,21 @@
 
 ## Skill catalog
 
-No skills added yet.
+| Category | Skill | What it does | Output |
+| --- | --- | --- | --- |
+| [Company Investigations](skills/investigation/) | [Company Background Investigation](skills/investigation/company-background-investigation/SKILL.md) | Verify company identities, key people, ownership, funding, and product operations to support employment, partnership, and investment research. | Offline interactive HTML, relationship graph, structured research data, and evidence manifest |
 
 <a id="previews"></a>
 
 ## Previews
 
-Space for finished work.
+### [Company Background Investigation](skills/investigation/company-background-investigation/SKILL.md)
+
+The DeepSeek report's relationship network connects the company to people, capital, and products, with linked entity profiles.
+
+[![Company Background Investigation: DeepSeek relationship network and entity profile](assets/previews/company-background-investigation.png)](skills/investigation/company-background-investigation/SKILL.md)
+
+Explore full examples: [DeepSeek](https://research.zrainbow1257.com/reports/deepseek/) · [Tipsy](https://research.zrainbow1257.com/reports/tipsy/) · [MiniMax](https://research.zrainbow1257.com/reports/minimax/)
 
 <a id="maintain"></a>
 

@@ -2,3 +2,5 @@
 *.md text eol=lf
 *.template text eol=lf
 *.py text eol=lf
+# The example evidence manifest records these exact bytes.
+skills/investigation/company-background-investigation/assets/example-evidence.txt -text

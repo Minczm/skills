@@ -1,0 +1,925 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "title": "示例甲科技｜公司背景调查",
+    "subtitle": "结构演示 · 主体、事件、来源、图片与日期均为虚构",
+    "root_id": "co-example-alpha",
+    "as_of": "2000-12-31",
+    "summary": "示例甲科技负责示例笔记的设计与开发，并运营示例叶品牌；示例丙发行负责商店发行。示例创始人甲与示例乙投资分别登记持股 60% 和 40%，创始人同时担任总经理。",
+    "core_ids": [
+      "co-example-alpha",
+      "person-example-founder",
+      "investor-example-beta",
+      "person-example-former",
+      "brand-example-leaf",
+      "product-example-note",
+      "co-example-publisher"
+    ],
+    "language": "zh-CN",
+    "is_example": true,
+    "navigation": [
+      {
+        "label": "先认识公司",
+        "target": "overview"
+      },
+      {
+        "label": "股东与资本",
+        "target": "section-capital"
+      },
+      {
+        "label": "关联公司主线",
+        "target": "network"
+      },
+      {
+        "label": "业务与资金",
+        "target": "section-flow"
+      },
+      {
+        "label": "产品与案例",
+        "target": "section-product"
+      },
+      {
+        "label": "人物与发展",
+        "target": "section-people"
+      },
+      {
+        "label": "核心问题",
+        "target": "questions"
+      },
+      {
+        "label": "完整资料档案",
+        "target": "archives"
+      }
+    ]
+  },
+  "entities": [
+    {
+      "id": "co-example-alpha",
+      "name": "示例甲科技",
+      "short_name": "示例甲",
+      "type": "company",
+      "summary": "示例笔记的开发公司，也是示例叶品牌的运营主体，与示例丙开展发行合作。",
+      "status": "current",
+      "cluster": "company",
+      "importance": 5,
+      "sources": [
+        "S001",
+        "S002"
+      ],
+      "fields": [
+        {
+          "label": "注册资本",
+          "value": "100 万元人民币；登记日 2000-01-01",
+          "sources": [
+            "S001"
+          ]
+        },
+        {
+          "label": "实缴资本",
+          "value": null,
+          "sources": []
+        },
+        {
+          "label": "收入（1999 年）",
+          "value": null,
+          "sources": []
+        },
+        {
+          "label": "披露范围",
+          "value": "实缴资本、融资到账及收入未披露",
+          "sources": [
+            "S001"
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "text": "登记股东为示例创始人甲和示例乙投资，持股比例分别为 60% 和 40%。",
+          "date": "2000-01-01",
+          "sources": [
+            "S001"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "公司承担的工作",
+          "text": "官网将示例笔记的设计与开发工作归于示例甲。",
+          "sources": [
+            "S002"
+          ],
+          "image_ids": [
+            "image-example-ui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "person-example-founder",
+      "name": "示例创始人甲",
+      "type": "person",
+      "summary": "示例甲的创始人兼总经理，登记持有公司 60% 股权。",
+      "status": "current",
+      "role": "创始人、总经理",
+      "cluster": "people",
+      "importance": 4,
+      "aliases": [
+        "样例人物甲"
+      ],
+      "sources": [
+        "S001",
+        "S002"
+      ],
+      "career": [
+        {
+          "date": "1999-01-01",
+          "title": "示例甲总经理",
+          "text": "自 1999-01-01 起担任总经理，官网截至观察日仍列示该职位。",
+          "sources": [
+            "S002"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "待核共事线索",
+          "text": "用户提到候选人物丁可能曾与其共事。候选人物另设档案，身份与任职记录待核。",
+          "sources": [
+            "U001",
+            "A001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investor-example-beta",
+      "name": "示例乙投资",
+      "type": "investor",
+      "summary": "示例甲的股东，登记持股 40%，认缴 40 万元人民币。",
+      "status": "current",
+      "cluster": "capital",
+      "sources": [
+        "S001"
+      ],
+      "fields": [
+        {
+          "label": "本轮融资到账",
+          "value": null,
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "person-example-former",
+      "name": "示例历史负责人乙",
+      "type": "person",
+      "summary": "1996-01-01 至 1998-12-31 担任示例甲产品负责人，当前任职未披露。",
+      "status": "historical",
+      "cluster": "people",
+      "sources": [
+        "S003"
+      ],
+      "career": [
+        {
+          "date": "1996-01-01",
+          "title": "加入示例甲",
+          "text": "担任产品负责人。",
+          "sources": [
+            "S003"
+          ]
+        },
+        {
+          "date": "1998-12-31",
+          "title": "任职结束",
+          "text": "产品负责人任期于 1998-12-31 结束。",
+          "sources": [
+            "S003"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand-example-leaf",
+      "name": "示例叶品牌",
+      "type": "brand",
+      "summary": "由示例甲运营的品牌。",
+      "status": "current",
+      "cluster": "product",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "product-example-note",
+      "name": "示例笔记产品",
+      "type": "product",
+      "summary": "由示例甲设计开发、示例丙在商店发行的笔记工具。",
+      "status": "current",
+      "cluster": "product",
+      "importance": 4,
+      "sources": [
+        "S002",
+        "S004"
+      ],
+      "image_ids": [
+        "image-example-ui"
+      ],
+      "fields": [
+        {
+          "label": "公开产品指标",
+          "value": null,
+          "sources": []
+        }
+      ],
+      "sections": [
+        {
+          "title": "开发与发行",
+          "text": "官网列示例甲为开发主体，商店页列示例丙为发行主体。",
+          "sources": [
+            "S002",
+            "S004"
+          ],
+          "image_ids": [
+            "image-example-ui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "co-example-publisher",
+      "name": "示例丙发行",
+      "type": "company",
+      "summary": "示例笔记的发行公司，与示例甲合作将产品发布至商店。",
+      "status": "current",
+      "cluster": "business",
+      "sources": [
+        "S002",
+        "S004"
+      ]
+    },
+    {
+      "id": "person-example-candidate",
+      "name": "示例候选人物丁",
+      "type": "person",
+      "summary": "用户提到的候选人物，与创始人的共事关系待核。",
+      "status": "candidate",
+      "cluster": "candidate",
+      "sources": [
+        "U001",
+        "A001"
+      ],
+      "facts": [
+        {
+          "text": "用户称其可能与创始人共事，身份与任职记录待核。",
+          "date": "2000-12-01",
+          "status": "candidate",
+          "sources": [
+            "U001"
+          ]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-founder-ownership",
+      "from": "person-example-founder",
+      "to": "co-example-alpha",
+      "type": "ownership",
+      "label": "登记持股 60%",
+      "detail": "认缴 60 万元人民币。",
+      "percent": 60,
+      "amount": 60,
+      "currency": "CNY",
+      "unit": "万元",
+      "date": "2000-01-01",
+      "status": "current",
+      "nature": "capital",
+      "sources": [
+        "S001"
+      ]
+    },
+    {
+      "id": "rel-founder-employment",
+      "from": "person-example-founder",
+      "to": "co-example-alpha",
+      "type": "employment",
+      "label": "总经理",
+      "detail": "自 1999-01-01 起任职。",
+      "valid_from": "1999-01-01",
+      "valid_to": null,
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "rel-investor-ownership",
+      "from": "investor-example-beta",
+      "to": "co-example-alpha",
+      "type": "ownership",
+      "label": "登记持股 40%",
+      "detail": "认缴 40 万元人民币。",
+      "percent": 40,
+      "amount": 40,
+      "currency": "CNY",
+      "unit": "万元",
+      "date": "2000-01-01",
+      "status": "current",
+      "nature": "capital",
+      "sources": [
+        "S001"
+      ]
+    },
+    {
+      "id": "rel-former-employment",
+      "from": "person-example-former",
+      "to": "co-example-alpha",
+      "type": "employment",
+      "label": "历史产品负责人",
+      "detail": "任期：1996-01-01 至 1998-12-31。",
+      "valid_from": "1996-01-01",
+      "valid_to": "1998-12-31",
+      "status": "historical",
+      "nature": "business",
+      "sources": [
+        "S003"
+      ]
+    },
+    {
+      "id": "rel-company-brand",
+      "from": "co-example-alpha",
+      "to": "brand-example-leaf",
+      "type": "operation",
+      "label": "运营品牌",
+      "date": "2000-01-01",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "rel-company-product",
+      "from": "co-example-alpha",
+      "to": "product-example-note",
+      "type": "creation",
+      "label": "设计与开发",
+      "date": "2000-01-01",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "rel-publisher-product",
+      "from": "co-example-publisher",
+      "to": "product-example-note",
+      "type": "publishing",
+      "label": "商店发行",
+      "date": "2000-06-01",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S004"
+      ]
+    },
+    {
+      "id": "rel-company-publisher",
+      "from": "co-example-alpha",
+      "to": "co-example-publisher",
+      "type": "partnership",
+      "label": "发行合作",
+      "date": "2000-01-01",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "rel-candidate-colleague",
+      "from": "person-example-candidate",
+      "to": "person-example-founder",
+      "type": "candidate",
+      "label": "待核查共事线索",
+      "detail": "用户转述的共事线索，身份和任职记录待核。",
+      "date": "2000-12-01",
+      "status": "candidate",
+      "nature": "business",
+      "sources": [
+        "U001",
+        "A001"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S001",
+      "title": "虚构模板登记快照",
+      "url": "https://example.invalid/registry/template-alpha",
+      "kind": "registry",
+      "publisher": "模板资料提供者（虚构）",
+      "published_at": "2000-01-01",
+      "observed_at": "2000-12-31",
+      "locator": "模板股东表，第 1–2 行",
+      "excerpt": "纯样本：注册资本 100 万元；两名股东认缴分别为 60、40 万元。没有实缴或收入数据。"
+    },
+    {
+      "id": "S002",
+      "title": "虚构模板官网：团队、品牌与产品",
+      "url": "https://example.invalid/company/template-alpha",
+      "kind": "official",
+      "published_at": "2000-01-01",
+      "observed_at": "2000-12-31",
+      "locator": "模板团队、产品与合作段落",
+      "excerpt": "纯样本：创始人任总经理；示例甲开发产品、运营品牌，并与示例丙开展发行合作。"
+    },
+    {
+      "id": "S003",
+      "title": "虚构模板历史任职档案",
+      "url": "https://example.invalid/archive/former-role",
+      "kind": "archive",
+      "published_at": "1999-01-02",
+      "observed_at": "2000-12-31",
+      "locator": "模板历史履历表",
+      "excerpt": "纯样本：历史负责人任职期为 1996-01-01 至 1998-12-31，不表示当前仍在职。"
+    },
+    {
+      "id": "S004",
+      "title": "虚构模板商店页面",
+      "url": "https://example.invalid/store/template-note",
+      "kind": "store",
+      "observed_at": "2000-12-31",
+      "locator": "模板发行主体栏；并非真实商店 ID",
+      "excerpt": "纯样本：示例丙是示例笔记产品的发行主体。没有下载量或收入指标。"
+    },
+    {
+      "id": "U001",
+      "title": "用户转述样例：候选人物可能与创始人共事（虚构）",
+      "url": "#source-U001",
+      "kind": "user",
+      "observed_at": "2000-12-31",
+      "excerpt": "仅用于测试用户补充的呈现：用户称候选人物丁可能与创始人甲共事，未提供可核验记录。"
+    },
+    {
+      "id": "A001",
+      "title": "虚构模板分析与占位插图说明",
+      "url": "#source-A001",
+      "kind": "analysis",
+      "observed_at": "2000-12-31",
+      "excerpt": "本样例全部虚构。候选边仅是待核查线索；占位插图仅检验离线嵌图，不是产品截图或调查证据。"
+    }
+  ],
+  "assets": [
+    {
+      "id": "image-example-ui",
+      "data_uri": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22640%22%20height%3D%22360%22%20viewBox%3D%220%200%20640%20360%22%3E%3Crect%20width%3D%22640%22%20height%3D%22360%22%20rx%3D%2224%22%20fill%3D%22%23e8eef0%22%2F%3E%3Crect%20x%3D%2272%22%20y%3D%2260%22%20width%3D%22496%22%20height%3D%22240%22%20rx%3D%2218%22%20fill%3D%22%23fff%22%2F%3E%3Ccircle%20cx%3D%22130%22%20cy%3D%22120%22%20r%3D%2224%22%20fill%3D%22%23337e7a%22%2F%3E%3Crect%20x%3D%22178%22%20y%3D%22104%22%20width%3D%22276%22%20height%3D%2218%22%20rx%3D%229%22%20fill%3D%22%23337e7a%22%2F%3E%3Crect%20x%3D%22106%22%20y%3D%22174%22%20width%3D%22428%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%239aafb3%22%2F%3E%3Crect%20x%3D%22106%22%20y%3D%22207%22%20width%3D%22310%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%239aafb3%22%2F%3E%3Ctext%20x%3D%22320%22%20y%3D%22270%22%20text-anchor%3D%22middle%22%20fill%3D%22%23425b61%22%20font-family%3D%22sans-serif%22%20font-size%3D%2220%22%3EFICTIONAL%20TEMPLATE%20ONLY%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "mime": "image/svg+xml",
+      "alt": "产品档案的占位界面",
+      "caption": "界面示意",
+      "observed_at": "2000-12-31",
+      "sources": [
+        "A001"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "finding-structure",
+      "title": "开发与发行由两家公司承担",
+      "text": "示例甲负责产品设计、开发和品牌运营，示例丙负责商店发行；创始人同时持股并担任总经理。",
+      "sources": [
+        "S001",
+        "S002",
+        "S004",
+        "A001"
+      ],
+      "entity_ids": [
+        "co-example-alpha",
+        "person-example-founder",
+        "product-example-note"
+      ]
+    },
+    {
+      "id": "finding-capital",
+      "title": "登记资本 100 万元，实缴未披露",
+      "text": "注册资本为 100 万元人民币，创始人与示例乙投资分别认缴 60 万元和 40 万元。实缴资本、融资到账和收入未披露。",
+      "sources": [
+        "S001"
+      ],
+      "entity_ids": [
+        "co-example-alpha",
+        "investor-example-beta"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-capital",
+      "title": "资本与股东",
+      "kicker": "资本",
+      "intro": "公司有两名登记股东，注册资本为 100 万元人民币。",
+      "blocks": [
+        {
+          "title": "认缴资本的构成",
+          "chart": {
+            "title": "虚构股东认缴",
+            "unit": "万元人民币",
+            "rows": [
+              {
+                "label": "2000期末",
+                "segments": [
+                  {
+                    "name": "示例创始人甲",
+                    "value": 60
+                  },
+                  {
+                    "name": "示例乙投资",
+                    "value": 40
+                  }
+                ]
+              }
+            ],
+            "note": "本图使用虚构认缴金额；实缴和收入字段保持未披露。",
+            "sources": [
+              "S001"
+            ],
+            "claim_ids": [
+              "claim-example-capital"
+            ]
+          },
+          "sources": [
+            "S001"
+          ],
+          "claim_ids": [
+            "claim-example-capital"
+          ]
+        },
+        {
+          "title": "股东与认缴金额",
+          "text": "创始人持股 60%，认缴 60 万元；示例乙投资持股 40%，认缴 40 万元。实缴资本和融资到账未披露。",
+          "sources": [
+            "S001"
+          ],
+          "entity_ids": [
+            "co-example-alpha",
+            "person-example-founder",
+            "investor-example-beta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-people",
+      "title": "人物与历史任职",
+      "kicker": "人物",
+      "intro": "创始人兼任总经理，产品负责人另有明确的历史任期。",
+      "blocks": [
+        {
+          "title": "创始人的持股与任职",
+          "text": "创始人登记持有示例甲 60% 股权，并自 1999-01-01 起担任总经理。",
+          "sources": [
+            "S001",
+            "S002"
+          ],
+          "entity_ids": [
+            "person-example-founder",
+            "co-example-alpha"
+          ]
+        },
+        {
+          "title": "历史任职与共事线索",
+          "text": "历史负责人于 1996-01-01 至 1998-12-31 任职。用户另提到候选人物丁可能与创始人共事，该线索待核。",
+          "sources": [
+            "S003",
+            "U001",
+            "A001"
+          ],
+          "entity_ids": [
+            "person-example-former",
+            "person-example-candidate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-product",
+      "title": "品牌、产品与发行",
+      "kicker": "产品",
+      "intro": "示例甲运营示例叶品牌，并与示例丙共同完成产品开发和发行。",
+      "blocks": [
+        {
+          "title": "角色划分",
+          "text": "示例甲负责示例笔记的设计与开发，示例丙负责商店发行。官网和商店页面分别记录了两家公司的角色。",
+          "sources": [
+            "S002",
+            "S004"
+          ],
+          "entity_ids": [
+            "co-example-alpha",
+            "brand-example-leaf",
+            "product-example-note",
+            "co-example-publisher"
+          ],
+          "image_ids": [
+            "image-example-ui"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-flow",
+      "title": "业务流程与资金信息",
+      "kicker": "业务",
+      "intro": "产品经过开发、发行合作和商店发布三个环节，分成和结算信息未披露。",
+      "blocks": [
+        {
+          "title": "产品进入商店的流程",
+          "text": "示例甲完成开发后，与示例丙合作发行，由示例丙作为商店列示的发行主体。",
+          "sources": [
+            "S002",
+            "S004"
+          ],
+          "entity_ids": [
+            "co-example-alpha",
+            "co-example-publisher",
+            "product-example-note"
+          ],
+          "steps": [
+            {
+              "title": "设计与开发",
+              "text": "示例甲完成产品的设计与开发。",
+              "sources": [
+                "S002"
+              ]
+            },
+            {
+              "title": "发行合作",
+              "text": "示例甲与示例丙开展发行合作。",
+              "sources": [
+                "S002"
+              ]
+            },
+            {
+              "title": "商店发行",
+              "text": "商店列示例丙为发行主体。",
+              "sources": [
+                "S004"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "question-capital",
+      "question": "登记资本和到账情况分别是多少？",
+      "answer": "注册资本为 100 万元人民币，登记认缴额合计 100 万元。实缴资本与融资到账金额未披露。",
+      "why_it_matters": "资本登记和资金到账对应不同财务口径。",
+      "sources": [
+        "S001"
+      ],
+      "evidence": [
+        {
+          "text": "登记资料列出注册资本和认缴额，实缴数据未披露。",
+          "sources": [
+            "S001"
+          ],
+          "entity_ids": [
+            "co-example-alpha"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "question-candidate",
+      "question": "候选人物与创始人有什么联系？",
+      "answer": "用户称两人可能曾共事。目前将其保留为候选连接，身份与任职记录待核。",
+      "why_it_matters": "身份与任职证据决定这条连接的可信度。",
+      "sources": [
+        "U001",
+        "A001"
+      ],
+      "evidence": [
+        {
+          "text": "现有线索来自用户转述，具体身份和任职材料待补。",
+          "sources": [
+            "U001"
+          ],
+          "entity_ids": [
+            "person-example-candidate",
+            "person-example-founder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "question-publisher",
+      "question": "谁负责产品开发，谁负责发行？",
+      "answer": "示例甲负责开发，示例丙负责发行。官网和商店页面分别记载了这两个角色。",
+      "sources": [
+        "S002",
+        "S004"
+      ],
+      "evidence": [
+        {
+          "text": "官网列开发者，商店列发行主体。",
+          "sources": [
+            "S002",
+            "S004"
+          ],
+          "entity_ids": [
+            "co-example-alpha",
+            "co-example-publisher",
+            "product-example-note"
+          ]
+        }
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "id": "archive-people",
+      "title": "人物档案",
+      "intro": "汇集创始人、历史负责人及候选人物的任职和关联记录。",
+      "entity_ids": [
+        "person-example-founder",
+        "person-example-former",
+        "person-example-candidate"
+      ],
+      "source_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "U001",
+        "A001"
+      ],
+      "blocks": [
+        {
+          "title": "任职与线索",
+          "text": "创始人现任总经理，历史负责人的任期为 1996-01-01 至 1998-12-31，候选人物的共事线索待核。",
+          "sources": [
+            "S002",
+            "S003",
+            "U001",
+            "A001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archive-product",
+      "title": "产品档案",
+      "entity_ids": [
+        "brand-example-leaf",
+        "product-example-note",
+        "co-example-publisher"
+      ],
+      "source_ids": [
+        "S002",
+        "S004",
+        "A001"
+      ],
+      "blocks": [
+        {
+          "title": "界面示意",
+          "text": "占位界面用于展示产品档案中的图像位置。",
+          "sources": [
+            "A001"
+          ],
+          "image_ids": [
+            "image-example-ui"
+          ]
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "1996-01-01",
+      "title": "产品负责人加入",
+      "text": "开始担任示例甲产品负责人。",
+      "sources": [
+        "S003"
+      ],
+      "entity_ids": [
+        "person-example-former",
+        "co-example-alpha"
+      ]
+    },
+    {
+      "date": "1998-12-31",
+      "title": "产品负责人任期结束",
+      "text": "产品负责人于 1998-12-31 结束任职。",
+      "sources": [
+        "S003"
+      ],
+      "entity_ids": [
+        "person-example-former"
+      ]
+    },
+    {
+      "date": "2000-06-01",
+      "title": "商店发行记录",
+      "text": "商店列示例丙为产品发行主体。",
+      "sources": [
+        "S004"
+      ],
+      "entity_ids": [
+        "product-example-note",
+        "co-example-publisher"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-example-capital",
+      "text": "虚构示例甲科技的两名登记股东分别认缴60万元和40万元，对应60%和40%。",
+      "kind": "fact",
+      "entity_ids": [
+        "co-example-alpha",
+        "person-example-founder",
+        "investor-example-beta"
+      ],
+      "source_ids": [
+        "S001"
+      ],
+      "locator": "虚构模板登记快照，第1–2行",
+      "published_at": "2000-01-01",
+      "effective_at": null,
+      "as_of": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "evidence": [
+        {
+          "source_id": "S001",
+          "locator": "虚构股东表，第1–2行",
+          "published_at": "2000-01-01",
+          "accessed_at": "2000-12-31",
+          "snapshot_id": "snapshot-example-registry"
+        }
+      ]
+    }
+  ],
+  "evidence_manifest": [
+    {
+      "id": "snapshot-example-registry",
+      "source_id": "S001",
+      "representation": "excerpt",
+      "status": "stored",
+      "captured_at": "2000-12-31",
+      "path": "example-evidence.txt",
+      "sha256": "931db3f23f45646151977da0fa07c807a38e02cd9b9db374395a88e2ca2ecbfe",
+      "bytes": 283,
+      "access_note": "虚构教学文本；哈希对应随附文件的实际字节。"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "注册资本 · 虚构样本",
+      "value": "100万元",
+      "detail": "2000-12-31；人民币",
+      "sources": [
+        "S001"
+      ],
+      "claim_ids": [
+        "claim-example-capital"
+      ]
+    },
+    {
+      "label": "创始人认缴份额",
+      "value": "60%",
+      "detail": "虚构样本；登记口径",
+      "sources": [
+        "S001"
+      ],
+      "claim_ids": [
+        "claim-example-capital"
+      ]
+    },
+    {
+      "label": "投资方认缴份额",
+      "value": "40%",
+      "detail": "虚构样本；登记口径",
+      "sources": [
+        "S001"
+      ],
+      "claim_ids": [
+        "claim-example-capital"
+      ]
+    },
+    {
+      "label": "开发与发行主体",
+      "value": "2家",
+      "detail": "虚构示例甲、示例丙",
+      "sources": [
+        "S002",
+        "S004"
+      ]
+    }
+  ]
+}

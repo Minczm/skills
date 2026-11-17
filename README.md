@@ -75,13 +75,21 @@
 
 ## 技能目录
 
-首项 Skill 待收录。
+| 分类 | Skill | 解决的问题 | 产出 |
+| --- | --- | --- | --- |
+| [公司调查](skills/investigation/) | [公司深度背景调查](skills/investigation/company-background-investigation/SKILL.md) | 核验公司主体、人物、股权、资金与产品运营，为入职、合作和投资研究建立可追溯的事实基础。 | 离线交互式 HTML、关系图谱、结构化调查数据与证据清单 |
 
 <a id="previews"></a>
 
 ## 作品预览
 
-成品图待补充。
+### [公司深度背景调查](skills/investigation/company-background-investigation/SKILL.md)
+
+DeepSeek 报告中的关系网络：从公司出发查看人物、资本与产品连接，并打开对应主体档案。
+
+[![公司深度背景调查：DeepSeek 关系网络与主体档案](assets/previews/company-background-investigation.png)](skills/investigation/company-background-investigation/SKILL.md)
+
+查看完整案例：[DeepSeek](https://research.zrainbow1257.com/reports/deepseek/) · [Tipsy](https://research.zrainbow1257.com/reports/tipsy/) · [MiniMax](https://research.zrainbow1257.com/reports/minimax/)
 
 <a id="maintain"></a>
 

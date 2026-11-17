@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>公司背景调查</title>
+  <style>__DOSSIER_CSS__</style>
+</head>
+<body>
+  <a class="skip" href="#overview">跳到正文</a>
+  <header class="mobilebar"><a href="#overview" id="mobileTitle">公司背景调查</a><button id="menuToggle" aria-expanded="false" aria-controls="sidebar">目录 ☰</button></header>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">◈</span><span id="brandTitle">公司背景调查<small>人物 · 资本 · 业务</small></span></a>
+    <div class="nav-caption">阅读目录</div><nav id="reportNav" aria-label="报告目录"></nav>
+    <div class="nav-footer"><span class="live-dot"></span><span id="sidebarDate"></span><small id="sidebarCounts"></small></div>
+  </aside>
+  <main id="main">
+    <div class="topbar"><span>公司背景调查</span><div class="topbar-actions"><button class="quiet" id="openSearch" aria-haspopup="dialog" aria-controls="searchDialog">搜索档案 <kbd>/</kbd></button><button class="quiet" id="printReport">打印 / 保存 PDF ↗</button></div></div>
+    <section class="section hero" id="overview" aria-labelledby="reportTitle">
+      <div class="eyebrow">公司画像与关键判断 <span id="reportDate"></span></div>
+      <div class="hero-grid"><div><h1 id="reportTitle"></h1><p class="hero-subtitle" id="reportSubtitle"></p><div class="hero-actions"><a class="primary" href="#network">展开关系网络 <span>↗</span></a><a class="secondary" href="#questions">核心问题 ↓</a></div></div><div id="heroMedia"></div></div>
+      <article class="judgment" id="judgment"></article>
+      <div class="business-metrics" id="businessMetrics"></div>
+      <div class="stats" id="reportStats"></div>
+      <div class="findings" id="findings"></div>
+      <nav class="reading-grid" id="readingEntries" aria-label="调查方向"></nav>
+    </section>
+    <section class="section" id="network" aria-labelledby="networkTitle">
+      <div class="section-head"><div><span class="eyebrow">人物、公司与产品</span><h2 id="networkTitle">关系网络</h2></div><p id="networkSummary"></p></div>
+      <div class="network-panel" id="networkPanel">
+        <div class="network-toolbar">
+          <div class="views" role="group" aria-label="网络视图"><button data-view="core" aria-pressed="true">核心网络</button><button data-view="all" aria-pressed="false">全部主体</button><button data-view="near" aria-pressed="false">所选周边</button></div>
+          <div class="network-search"><label for="networkSearch" class="sr-only">搜索主体、别名与工作</label><input id="networkSearch" type="search" placeholder="搜索主体、别名与工作" autocomplete="off" aria-controls="networkResults"><div id="networkResults" class="search-results" hidden></div></div>
+          <button class="secondary" id="networkFull" aria-pressed="false">全屏 ↗</button>
+        </div>
+        <div class="network-main">
+          <div class="network-canvas-column">
+            <div class="network-legend" id="networkLegend"></div>
+            <div class="network-viewport" id="networkViewport">
+              <svg id="networkSvg" role="group" aria-label="可交互的主体关系网络"><g id="networkLinks"></g><g id="networkNodes"></g></svg>
+              <div class="zoom-tools"><button id="zoomIn" aria-label="放大">＋</button><button id="zoomOut" aria-label="缩小">−</button><button id="fitGraph" aria-label="适应画布">适应</button><button id="resetGraph" aria-label="回到核心网络">重置</button></div>
+              <span class="canvas-hint">拖动主体或画布 · Ctrl + 滚轮缩放</span>
+            </div>
+            <div class="network-path" id="networkPath" aria-live="polite"></div>
+          </div>
+          <aside class="network-inspector" id="networkInspector" aria-label="所选主体或关系详情"></aside>
+        </div>
+        <div class="network-footer"><span id="networkCount" aria-live="polite"></span><span>点击主体看档案 · 点击连线看逐条关系</span></div>
+      </div>
+    </section>
+    <div id="reportSections"></div>
+    <section class="section" id="questions" aria-labelledby="questionsTitle"><div class="section-head"><div><span class="eyebrow" id="questionKicker">核心问题</span><h2 id="questionsTitle">读懂这家公司</h2></div></div><div id="questionList" class="questions"></div></section>
+    <section class="section" id="archives" aria-labelledby="archivesTitle"><div class="section-head"><div><span class="eyebrow">主体与原始记录</span><h2 id="archivesTitle">完整档案</h2></div><p id="archiveCount"></p></div><div id="archiveList"></div></section>
+    <section class="section" id="timeline" aria-labelledby="timelineTitle"><div class="section-head"><div><span class="eyebrow">事件与时间</span><h2 id="timelineTitle">时间线</h2></div></div><div class="timeline" id="timelineList"></div></section>
+    <section class="section" id="sources" aria-labelledby="sourcesTitle"><div class="section-head"><div><span class="eyebrow">完整出处索引</span><h2 id="sourcesTitle">资料来源</h2></div><p id="sourceCount"></p></div><div class="source-tools"><label for="sourceSearch" class="sr-only">搜索来源</label><input id="sourceSearch" type="search" placeholder="搜索标题、发布者、编号或定位信息"><span id="sourceSearchCount" aria-live="polite"></span></div><div class="source-index" id="sourceList"></div></section>
+    <section class="print-evidence" id="printEvidence" aria-labelledby="printEvidenceTitle"><h2 id="printEvidenceTitle">判断与依据</h2><div id="printEvidenceContent"></div></section>
+    <footer class="report-footer"><span id="footerTitle"></span><a href="#overview">回到顶部 ↑</a></footer>
+  </main>
+  <dialog id="dossierDialog" aria-labelledby="dossierTitle"><div class="dialog-bar"><span>主体档案</span><button id="closeDossier" aria-label="关闭主体档案">关闭 ×</button></div><div id="dossierContent"></div></dialog>
+  <dialog id="evidenceDialog" aria-labelledby="evidenceTitle"><div class="dialog-bar"><h2 id="evidenceTitle">判断与依据</h2><button id="closeEvidence" aria-label="关闭判断依据">关闭 ×</button></div><div id="evidenceContent"></div></dialog>
+  <dialog id="searchDialog" class="site-search-dialog" aria-labelledby="searchTitle"><div class="dialog-bar"><h2 id="searchTitle">搜索档案</h2><button id="closeSearch" aria-label="关闭搜索">关闭 ×</button></div><div class="site-search-input"><label for="globalSearch" class="sr-only">搜索整份报告</label><input id="globalSearch" type="search" placeholder="搜索人物、公司、产品、正文或来源" autocomplete="off" aria-controls="globalSearchResults"><p id="globalSearchStatus" aria-live="polite"></p></div><div id="globalSearchResults" class="site-search-results"></div></dialog>
+  <noscript><p class="noscript">请启用 JavaScript 查看报告正文与关系网络。</p></noscript>
+  <script id="dossierData" type="application/json">__DOSSIER_JSON__</script>
+  <script>__DOSSIER_JS__</script>
+</body>
+</html>
