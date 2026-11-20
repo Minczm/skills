@@ -98,3 +98,7 @@ DeepSeek 报告中的关系网络：从公司出发查看人物、资本与产�
 把技能文件夹、ZIP 或 `SKILL.md` 交给 AI，附上仓库链接，按维护说明归类、更新双语目录并提交。
 
 [添加与传输 →](docs/maintenance.md) &nbsp; · &nbsp; [维护规则](AGENTS.md)
+
+
+## Thanks
+[Linux Do](https://linux.do) 社区的帮助
