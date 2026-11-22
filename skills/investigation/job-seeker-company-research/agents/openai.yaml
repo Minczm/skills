@@ -1,0 +1,13 @@
+interface:
+  display_name: 求职公司深度背调
+  short_description: 面向求职者的公司与岗位背调：核验签约主体、业务资金安全、岗位五维、薪酬口碑与劳动风险，生成带面试反问清单和关系网的离线 HTML 报告
+  default_prompt: 使用 $job-seeker-company-research 从求职者视角深度背调目标公司与岗位，核验签约主体、业务前景、真实工作内容、薪酬口碑与避坑红旗，并交付带面试反问清单和关系网的离线 HTML 报告。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

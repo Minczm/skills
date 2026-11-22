@@ -1,0 +1,535 @@
+{
+  "schema_version": 1,
+  "meta": {
+    "title": "青禾云图科技｜求职深度背调报告（虚构教学样例）",
+    "subtitle": "结构演示 · 主体、薪酬、口碑、日期与结论均为虚构",
+    "root_id": "co-demo-qinghe",
+    "as_of": "2000-12-31",
+    "snapshot_at": "2000-12-31",
+    "summary": "青禾云图科技为盈利稳健的中型 SaaS 团队，签约主体与实际运营主体一致，近三年参保人数稳步扩至 138 人；需在面试中重点核实 B 端大客户交付期的驻场/值班频率及浮动年终兑现比例。",
+    "core_ids": [
+      "co-demo-qinghe",
+      "person-demo-cto",
+      "prod-demo-cloud",
+      "inv-demo-vc"
+    ],
+    "language": "zh-CN",
+    "is_example": true,
+    "navigation": [
+      {
+        "label": "5 分钟求职结论",
+        "target": "overview"
+      },
+      {
+        "label": "签约与实控关系网",
+        "target": "network"
+      },
+      {
+        "label": "岗位五维拆解",
+        "target": "role-assessment"
+      },
+      {
+        "label": "业务与口碑分析",
+        "target": "section-stability"
+      },
+      {
+        "label": "面试反问清单",
+        "target": "checklist"
+      },
+      {
+        "label": "求职核心问答",
+        "target": "questions"
+      },
+      {
+        "label": "完整资料档案",
+        "target": "archives"
+      }
+    ]
+  },
+  "job_context": {
+    "target_role": "后端研发工程师（示例）",
+    "business_unit": "云平台架构组",
+    "location": "上海",
+    "stage": "面试前准备",
+    "employer_entity": "青禾云图科技有限公司（与运营主体一致）",
+    "compensation_note": "25k–40k × 14 薪（合同保底 13 薪）",
+    "entity_ids": [
+      "co-demo-qinghe"
+    ],
+    "sources": [
+      "S001",
+      "S002"
+    ]
+  },
+  "decision_scorecard": [
+    {
+      "id": "SC01",
+      "dimension": "生存与资金安全",
+      "rating": "positive",
+      "verdict": "参保连年增长、现金流稳健",
+      "summary": "近三年年报参保人数由 85 人增至 138 人，未见欠薪或执行记录。",
+      "sources": [
+        "S001"
+      ],
+      "claim_ids": [
+        "C001"
+      ]
+    },
+    {
+      "id": "SC02",
+      "dimension": "签约主体安全",
+      "rating": "positive",
+      "verdict": "签约主体即核心运营主体",
+      "summary": "招聘与劳动合同落款均为核心运营实体，无外包套壳风险。",
+      "sources": [
+        "S001",
+        "S002"
+      ],
+      "claim_ids": [
+        "C001"
+      ]
+    },
+    {
+      "id": "SC03",
+      "dimension": "工作强度与口碑",
+      "rating": "caution",
+      "verdict": "日常双休、交付季有值班",
+      "summary": "社区匿名反馈日常节奏可控，但大客户上线窗口期存在夜间值班。",
+      "sources": [
+        "S003"
+      ]
+    },
+    {
+      "id": "SC04",
+      "dimension": "劳动合规风险",
+      "rating": "positive",
+      "verdict": "未检出公开劳动争议败诉",
+      "summary": "截至观察日未检出欠薪、违法解除或失信记录。",
+      "sources": [
+        "S001"
+      ]
+    }
+  ],
+  "flags": {
+    "green": [
+      {
+        "id": "GF01",
+        "category": "团队扩张",
+        "date": "2000-12-31",
+        "title": "连续三年净扩编且签约主体透明",
+        "text": "年报社保参保人数连续三年正增长（85 → 112 → 138 人），合同直接签在主运营主体。",
+        "sources": [
+          "S001",
+          "S002"
+        ],
+        "entity_ids": [
+          "co-demo-qinghe"
+        ]
+      }
+    ],
+    "red": [
+      {
+        "id": "RF01",
+        "category": "工作强度",
+        "date": "2000-11",
+        "title": "大客户上线窗口期值班与调休规则待核",
+        "text": "多条匿名评价提及季度末交付期存在夜间值班，且调休执行口径在各小组不一致。",
+        "sources": [
+          "S003"
+        ],
+        "entity_ids": [
+          "prod-demo-cloud"
+        ]
+      }
+    ]
+  },
+  "role_assessment": {
+    "target_role": "后端研发工程师（虚构示例）",
+    "team": "云平台架构组",
+    "location": "上海",
+    "summary": "以 Go/PostgreSQL 微服务与高可用数据同步为主，技术栈务实，成长点在多租户稳定性。",
+    "dimensions": [
+      {
+        "id": "actual_technology",
+        "title": "实际技术与方法",
+        "answer": "核心服务采用 Go + PostgreSQL + Kafka，偏工程实用而非追逐概念。",
+        "jd_signal": "JD 要求熟悉 Go、分布式缓存与消息队列。",
+        "reality_signal": "官方开源仓库近 6 个月保持 Go 工具链周级提交。",
+        "sources": [
+          "S002",
+          "S004"
+        ]
+      },
+      {
+        "id": "operating_systems",
+        "title": "线上运行系统与流程",
+        "answer": "采用双周迭代与灰度发布，季度末大客户定制交付易打断常规迭代节奏。",
+        "sources": [
+          "S003",
+          "S004"
+        ]
+      },
+      {
+        "id": "prior_experience",
+        "title": "团队既往交付与水位",
+        "answer": "CTO 曾主导大型云存储系统，团队持续维护主力云图引擎并有公开技术分享。",
+        "sources": [
+          "S004"
+        ],
+        "entity_ids": [
+          "person-demo-cto"
+        ]
+      },
+      {
+        "id": "domain_knowledge",
+        "title": "行业与业务约束",
+        "answer": "B 端企业客户对数据隔离、审计日志与 SLA 赔付要求严格。",
+        "sources": [
+          "S002"
+        ]
+      },
+      {
+        "id": "working_conditions",
+        "title": "工作条件、节奏与边界",
+        "answer": "常规 10-7-5 双休；需核实季度交付期 On-call 补贴与 14 薪中浮动年终的兑现标准。",
+        "sources": [
+          "S002",
+          "S003"
+        ]
+      }
+    ]
+  },
+  "interview_checklist": [
+    {
+      "id": "IC01",
+      "target": "interviewer",
+      "priority": "P0",
+      "question": "团队目前常规产品迭代和大客户定制交付各占多大精力？季度末值班如何排班与调休？",
+      "trigger_fact": "公开员工反馈提到大客户上线窗口期存在夜间值班，各组调休口径不一。",
+      "good_signal": "有明确轮值表、次日可调休或补贴，且定制需求被隔离在交付团队。",
+      "risk_signal": "模糊回应“看项目紧急程度”“大家都很拼”。",
+      "sources": [
+        "S003"
+      ]
+    },
+    {
+      "id": "IC02",
+      "target": "hr",
+      "priority": "P0",
+      "question": "14 薪里保底是几薪？过去两年研发部门平均年终奖实际兑现了几个月？公积金按全额基数还是下限缴？",
+      "trigger_fact": "招聘口径写 14 薪但合同保底 13 薪，浮动部分兑现率未公开。",
+      "good_signal": "直接告知全额 12% 公积金及近两年实际中位数兑现月数。",
+      "risk_signal": "只谈“最高可达”或回避公积金基数。",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "IC03",
+      "target": "contract",
+      "priority": "P1",
+      "question": "入职合同签约主体、发薪主体和社保缴纳主体是否全部为青禾云图科技有限公司？是否附带竞业限制协议？",
+      "trigger_fact": "签字前需逐项核对劳动合同主体一致性及竞业触发条件。",
+      "good_signal": "三主体完全一致，普通研发岗不签或明确不启动竞业。",
+      "risk_signal": "临时换成关联小微公司或要求无补偿/低补偿全员竞业。",
+      "sources": [
+        "S001"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "年报参保人数（示例）",
+      "value": "138 人",
+      "detail": "2023 年 85 人 → 2024 年 112 人 → 2025 年 138 人",
+      "sources": [
+        "S001"
+      ],
+      "claim_ids": [
+        "C001"
+      ]
+    },
+    {
+      "label": "招聘薪资带宽",
+      "value": "25k–40k",
+      "detail": "14 薪（合同保底 13 薪）",
+      "sources": [
+        "S002"
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "co-demo-qinghe",
+      "name": "青禾云图科技有限公司（示例）",
+      "short_name": "青禾云图",
+      "type": "company",
+      "role": "目标公司及主要签约/运营主体",
+      "summary": "虚构教学示例公司，主营企业级云图协作平台，连续三年参保净增长。",
+      "status": "current",
+      "cluster": "company",
+      "importance": 5,
+      "sources": [
+        "S001",
+        "S002"
+      ],
+      "fields": [
+        {
+          "label": "统一社会信用代码",
+          "value": "91000000EXAMPLE01X",
+          "sources": [
+            "S001"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "person-demo-cto",
+      "name": "林知行（示例 CTO）",
+      "short_name": "林知行 (CTO)",
+      "type": "person",
+      "role": "联合创始人兼 CTO",
+      "summary": "负责云平台研发与技术架构。",
+      "status": "current",
+      "cluster": "people",
+      "importance": 4,
+      "sources": [
+        "S004"
+      ]
+    },
+    {
+      "id": "prod-demo-cloud",
+      "name": "青禾云图引擎（示例）",
+      "short_name": "云图引擎",
+      "type": "product",
+      "role": "核心 B 端 SaaS 产品",
+      "summary": "主力营收产品，季度交付密集。",
+      "status": "current",
+      "cluster": "product",
+      "importance": 4,
+      "sources": [
+        "S002",
+        "S004"
+      ]
+    },
+    {
+      "id": "inv-demo-vc",
+      "name": "松风创投（示例）",
+      "short_name": "松风创投",
+      "type": "investor",
+      "role": "B 轮财务投资方",
+      "summary": "持有部分股权的机构股东。",
+      "status": "current",
+      "cluster": "capital",
+      "importance": 3,
+      "sources": [
+        "S001"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-demo-cto",
+      "from": "person-demo-cto",
+      "to": "co-demo-qinghe",
+      "type": "employment",
+      "label": "联合创始人兼 CTO",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S004"
+      ]
+    },
+    {
+      "id": "rel-demo-prod",
+      "from": "co-demo-qinghe",
+      "to": "prod-demo-cloud",
+      "type": "operation",
+      "label": "研发与商业化运营",
+      "status": "current",
+      "nature": "business",
+      "sources": [
+        "S002"
+      ]
+    },
+    {
+      "id": "rel-demo-vc",
+      "from": "inv-demo-vc",
+      "to": "co-demo-qinghe",
+      "type": "investment",
+      "label": "B 轮投资方",
+      "status": "current",
+      "nature": "capital",
+      "sources": [
+        "S001"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S001",
+      "title": "示例工商年报与劳动合规检索记录（虚构）",
+      "url": "https://example.com/registry-demo",
+      "kind": "labor_legal",
+      "publisher": "示例登记库",
+      "published_at": "2000-12-01",
+      "observed_at": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "locator": "example-evidence.txt 第 2-3 行"
+    },
+    {
+      "id": "S002",
+      "title": "示例招聘官网后端研发岗位 JD（虚构）",
+      "url": "https://example.com/jobs-demo",
+      "kind": "job_posting",
+      "publisher": "青禾云图招聘",
+      "published_at": "2000-12-10",
+      "observed_at": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "locator": "example-evidence.txt 第 4 行"
+    },
+    {
+      "id": "S003",
+      "title": "示例社区员工匿名评价摘要（虚构）",
+      "url": "https://example.com/reviews-demo",
+      "kind": "employee_review",
+      "publisher": "示例职场社区",
+      "published_at": "2000-11-20",
+      "observed_at": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "locator": "2000 年下半年研发部匿名反馈汇总"
+    },
+    {
+      "id": "S004",
+      "title": "示例开源仓库与技术博客记录（虚构）",
+      "url": "https://example.com/github-demo",
+      "kind": "tech_footprint",
+      "publisher": "示例工程团队",
+      "published_at": "2000-12-15",
+      "observed_at": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "locator": "仓库提交与架构文章"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "示例公司近三年参保人数由 85 人增长至 138 人，且签约主体与核心运营主体一致。",
+      "kind": "fact",
+      "entity_ids": [
+        "co-demo-qinghe"
+      ],
+      "source_ids": [
+        "S001",
+        "S002"
+      ],
+      "locator": "example-evidence.txt 第 2-4 行",
+      "published_at": "2000-12-01",
+      "effective_at": "2000-12-31",
+      "as_of": "2000-12-31",
+      "accessed_at": "2000-12-31",
+      "status": "current",
+      "evidence": [
+        {
+          "source_id": "S001",
+          "locator": "第 2-3 行",
+          "published_at": "2000-12-01",
+          "accessed_at": "2000-12-31",
+          "snapshot_id": "E001"
+        }
+      ]
+    }
+  ],
+  "evidence_manifest": [
+    {
+      "id": "E001",
+      "source_id": "S001",
+      "representation": "extracted_text",
+      "status": "stored",
+      "captured_at": "2000-12-31",
+      "path": "example-evidence.txt",
+      "sha256": "3559b1763fbc3bb840ed6eba8d744a430982b57e29fd033f77711fd399f6ad4b",
+      "bytes": 492,
+      "locator": "教学示例文本全文"
+    }
+  ],
+  "assets": [],
+  "findings": [
+    {
+      "id": "F001",
+      "title": "教学演示：求职背调报告核心结构",
+      "text": "本文件仅演示求职五维评估卡、红/绿旗、岗位五维与可勾选面试清单的数据格式。",
+      "sources": [
+        "S001"
+      ],
+      "entity_ids": [
+        "co-demo-qinghe"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-stability",
+      "title": "业务健康度与薪酬口碑摘要（示例）",
+      "kicker": "求职基本盘",
+      "intro": "正式调查中此处展开营收/融资现金安全、业务线周期、薪酬带宽与社区口碑反失真分析。",
+      "blocks": [
+        {
+          "title": "薪酬与团队扩张口径",
+          "text": "招聘带宽 25k–40k × 14 薪，年报参保人数连续三年增长。",
+          "sources": [
+            "S001",
+            "S002"
+          ],
+          "entity_ids": [
+            "co-demo-qinghe"
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "签约主体稳不稳、团队在扩张吗？",
+      "answer": "示例公司签约主体即运营主体，近三年参保人数稳步增长至 138 人。",
+      "why_it_matters": "排除空壳主体与收缩期裁员风险。",
+      "sources": [
+        "S001",
+        "S002"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "id": "arch-01",
+      "title": "示例全部主体与原始记录",
+      "entity_ids": [
+        "co-demo-qinghe",
+        "person-demo-cto",
+        "prod-demo-cloud",
+        "inv-demo-vc"
+      ],
+      "source_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "blocks": []
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2000-12-31",
+      "title": "示例基线快照",
+      "text": "完成虚构教学样例校验与构建。",
+      "sources": [
+        "S001"
+      ],
+      "entity_ids": [
+        "co-demo-qinghe"
+      ]
+    }
+  ]
+}

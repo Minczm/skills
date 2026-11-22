@@ -78,6 +78,7 @@
 | 分类 | Skill | 解决的问题 | 产出 |
 | --- | --- | --- | --- |
 | [公司调查](skills/investigation/) | [公司深度背景调查](skills/investigation/company-background-investigation/SKILL.md) | 核验公司主体、人物、股权、资金与产品运营，为入职、合作和投资研究建立可追溯的事实基础。 | 离线交互式 HTML、关系图谱、结构化调查数据与证据清单 |
+| [公司调查](skills/investigation/) | [求职公司深度背调](skills/investigation/job-seeker-company-research/SKILL.md) | 站在求职者视角核验签约主体、业务资金安全、岗位五维、薪酬口碑与劳动合规，生成可带进面试间的避坑与反问档案。 | 求职决策仪表盘、加分/避坑红旗、岗位五维、可勾选面试反问清单与离线 HTML |
 
 <a id="previews"></a>
 
@@ -90,6 +91,12 @@ DeepSeek 报告中的关系网络：从公司出发查看人物、资本与产�
 [![公司深度背景调查：DeepSeek 关系网络与主体档案](assets/previews/company-background-investigation.png)](skills/investigation/company-background-investigation/SKILL.md)
 
 查看完整案例：[DeepSeek](https://research.zrainbow1257.com/reports/deepseek/) · [Tipsy](https://research.zrainbow1257.com/reports/tipsy/) · [MiniMax](https://research.zrainbow1257.com/reports/minimax/)
+
+### [求职公司深度背调](skills/investigation/job-seeker-company-research/SKILL.md)
+
+哔哩哔哩求职背调报告首屏：5 分钟求职决策红绿灯、加分项与避坑红旗双栏对比、岗位五维与可勾选面试反问清单。
+
+[![求职公司深度背调：哔哩哔哩求职决策仪表盘与避坑红旗](assets/previews/job-seeker-company-research.png)](skills/investigation/job-seeker-company-research/SKILL.md)
 
 <a id="maintain"></a>
 

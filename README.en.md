@@ -78,6 +78,7 @@
 | Category | Skill | What it does | Output |
 | --- | --- | --- | --- |
 | [Company Investigations](skills/investigation/) | [Company Background Investigation](skills/investigation/company-background-investigation/SKILL.md) | Verify company identities, key people, ownership, funding, and product operations to support employment, partnership, and investment research. | Offline interactive HTML, relationship graph, structured research data, and evidence manifest |
+| [Company Investigations](skills/investigation/) | [Job-Seeker Company Research](skills/investigation/job-seeker-company-research/SKILL.md) | Verify hiring entities, business & cash runway, 5-dimension role reality, compensation/reviews, and labor red flags for job seekers. | Decision scorecard, green/red flags, 5D role assessment, interactive interview checklist & offline HTML |
 
 <a id="previews"></a>
 
@@ -90,6 +91,12 @@ The DeepSeek report's relationship network connects the company to people, capit
 [![Company Background Investigation: DeepSeek relationship network and entity profile](assets/previews/company-background-investigation.png)](skills/investigation/company-background-investigation/SKILL.md)
 
 Explore full examples: [DeepSeek](https://research.zrainbow1257.com/reports/deepseek/) · [Tipsy](https://research.zrainbow1257.com/reports/tipsy/) · [MiniMax](https://research.zrainbow1257.com/reports/minimax/)
+
+### [Job-Seeker Company Research](skills/investigation/job-seeker-company-research/SKILL.md)
+
+Bilibili job-seeker dossier overview: 5-minute decision scorecard, green vs. red flags board, 5-dimension role assessment, and interactive interview checklist.
+
+[![Job-Seeker Company Research: Bilibili decision scorecard and red/green flags](assets/previews/job-seeker-company-research.png)](skills/investigation/job-seeker-company-research/SKILL.md)
 
 <a id="maintain"></a>
 
